@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import Review from '.review';
+import Review from './review';
 
 let Schema = mongoose.Schema;
 
