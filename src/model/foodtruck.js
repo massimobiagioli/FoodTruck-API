@@ -1,9 +1,9 @@
 import mongoose from 'mongoose';
 import Review from './review';
 
-let Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-let foodtruckSchema = new Schema({
+let FoodTruck = new Schema({
   name: {
     type: String,
     required: true
@@ -26,4 +26,4 @@ let foodtruckSchema = new Schema({
   }]
 });
 
-export default mongoose.model('FoodTruck', foodtruckSchema);
+export default mongoose.model('FoodTruck', FoodTruck);
