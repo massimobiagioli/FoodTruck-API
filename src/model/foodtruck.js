@@ -18,7 +18,10 @@ let FoodTruck = new Schema({
       type: String,
       default: 'Point'
     },
-    coordinates: [Number]
+    coordinates: {
+      "lat": Number,
+      "lng": Number
+    }
   },
   reviews: [{
     type: Schema.Types.ObjectId,
